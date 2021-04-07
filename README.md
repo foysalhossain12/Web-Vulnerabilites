@@ -35,7 +35,7 @@ Blind command injection occurs when the system command made to the server does n
 
         2. listen reverse shell :
 
-                                 nc -nvp 4242
+                                 nc -lnvp 4242
 
 Note : 
            
