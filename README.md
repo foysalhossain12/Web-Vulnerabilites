@@ -28,7 +28,7 @@ Active command injection will return the response to the user.  It can be made v
 
 ### Blind OS Command Injection :
       
-Blind command injection occurs when the system command made to the server does not return the response to the user in the HTML document . That means when a  attacker execute " system command "  like ls ,server will not return result of ls but  server execute ls command . For  , seening the result of :eyes: "system command " you must upload reverse shell on target / victim server . After ,uploaded  reverse shell on victim server , you must be  listen uploades shell on attacker terminal using nc command . 
+Blind command injection occurs when the system command made to the server does not return the response to the user in the HTML document . That means when a  attacker execute " system command "  like ls ,server will not return result of ls but  server execute ls command . For  , seeing the result of :eyes: "system command " you must upload reverse shell on target / victim server . After ,uploaded  reverse shell on victim server , you must be  listen uploades shell on attacker terminal using nc command . 
 
 
 ### Example :
@@ -134,5 +134,5 @@ For example, let's say we're logging into our bank account, and after correctly 
 There is however a potentially huge problem here, a hacker may be able to change the account_number parameter to something else like 1235, and if the site is incorrectly configured, then he would have access to someone else's bank information.
 
 
-### 👁️ Conclusion of IDOR : When  you change the value of (get /post) parameter  , you will other user information .
+### 👁️ Conclusion of IDOR : When  you change the value of (get /post) parameter  , you will see other user information .
 
