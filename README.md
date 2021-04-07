@@ -44,7 +44,7 @@ Note :
        2. One can easily  upload shell if OS command injection is occured .
               
 
-### 2. Sqlite3 or "flat-file" :
+# 2. Sqlite3 or "flat-file" :
 
 When databases stored as a file it's called "flat-file"  .The extension of those file is db . ( like webapp.db , base.db )
 
@@ -68,7 +68,7 @@ Use Of Sqlite3 :
                       select * from table_name ;  // see more //
                       
                 
-### 2. XML OR XML External Entity OR XXE :
+# 3. XML OR XML External Entity OR XXE :
 
 An XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data.
 
@@ -120,4 +120,16 @@ Here again, we are defining an ENTITY with the name read but the difference is t
 If we use this payload then a website vulnerable to XXE(normally) would display the content of the file /etc/passwd.
 
 In a similar manner, we can use this kind of payload to read other files but a lot of times you can fail to read files in this manner or the reason for failure could be the file you are trying to read.
+
+
+# 4.Broken Access -IDOR :
+
+###### IDOR, or Insecure Direct Object Reference, is the act of exploiting a misconfiguration in the way user input is handled, to access resources you wouldn't ordinarily be able to access. IDOR is a type of access control vulnerability.
+
+For example, let's say we're logging into our bank account, and after correctly authenticating ourselves, we get taken to a URL like this https://example.com/bank?account_number=1234. On that page we can see all our important bank details, and a user would do whatever they needed to do and move along their way thinking nothing is wrong.
+
+There is however a potentially huge problem here, a hacker may be able to change the account_number parameter to something else like 1235, and if the site is incorrectly configured, then he would have access to someone else's bank information.
+
+
+### 👁️ Conclusion of IDOR : When  you change the value of (get /post) parameter  , you will other user information .
 
