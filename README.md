@@ -5,7 +5,7 @@
 ### What is OS Command Injection ?
 
 
-OS Command Injection is server side  web vulnerablities where attacker execute " system command"  like id, whoami etc .
+OS Command Injection is server side  web vulnerablities where attacker execute " system command"  like id, whoami ,unamem etc os command  .
 It is a web vulnerability that allows an attacker to take advantage of that made system call to execute operating system commands on the server.
 
 
@@ -25,7 +25,7 @@ Active command injection will return the response to the user.  It can be made v
 
 ### Blind OS Command Injection :
       
-Blind command injection occurs when the system command made to the server does not return the response to the user in the HTML document . That means when a  attacker execute " system command "  like ls ,server will not return result of ls but  server execute ls command . For  , seening the result of  "system command " you must upload reverse shell on target / victim server . After ,upload  reverse shell on victim server , listen shell on attacker terminal using nc command . 
+Blind command injection occurs when the system command made to the server does not return the response to the user in the HTML document . That means when a  attacker execute " system command "  like ls ,server will not return result of ls but  server execute ls command . For  , seening the result of  "system command " you must upload reverse shell on target / victim server . After ,uploaded  reverse shell on victim server , you must be  listen uploades shell on attacker terminal using nc command . 
 
 
 ### Example :
@@ -38,6 +38,8 @@ Blind command injection occurs when the system command made to the server does n
                                  nc -nvp 4242
 
 Note : 
-       1. Change ip according your local host ip 
+           
+       1. Change ip according your local host ip
+        
        2. One can easily  upload shell if OS command injection is occured .
               
