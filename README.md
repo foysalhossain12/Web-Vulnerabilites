@@ -44,7 +44,7 @@ Note :
        2. One can easily  upload shell if OS command injection is occured .
               
 
-2. Sqlite3 or "flat-file" :
+### 2. Sqlite3 or "flat-file" :
 
 When databases stored as a file it's called "flat-file"  .The extension of those file is db . ( like webapp.db , base.db )
 
@@ -67,4 +67,56 @@ Use Of Sqlite3 :
 
                       select * from table_name ;  // see more //
                       
-                     
+                
+###2. XML OR XML External Entity OR XXE :
+An XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data.
+
+#### :-1:Disadvantage of XML attack :
+                                           
+                                           1. Cause of  Denial of Service (DoS) attack
+
+                                           2. Could use XXE to perform Server-Side Request Forgery (SSRF) 
+
+                                           3.  XXE may even enable port scanning and lead to remote code execution.
+
+#### There are Two types of XXE attacks :
+                          
+                                                      1. in-band xxe
+                                                      
+                                                      2.out-of-band xxe
+
+1) An in-band XXE attack is the one in which the attacker can receive an immediate response to the XXE payload.
+
+2) out-of-band XXE attacks (also called blind XXE), there is no immediate response from the web application and attacker has to reflect the output of their XXE payload to some other file or their own server.
+
+
+##### :pray:Note : For better understanding you need to learn basic of XML language 
+
+### XXE Payload :
+
+Now we'll see some XXE payload and see how they are working.
+
+1) The first payload we'll see is very simple. If you've read the previous task properly then you'll understand this payload very easily.
+
+<!DOCTYPE replace [<!ENTITY name "feast"> ]>
+ <userInfo>
+  <firstName>falcon</firstName>
+  <lastName>&name;</lastName>
+ </userInfo>
+
+
+
+As we can see we are defining a ENTITY called name and assigning it a value feast. Later we are using that ENTITY in our code.
+
+2) We can also use XXE to read some file from the system by defining an ENTITY and having it use the SYSTEM keyword
+
+<?xml version="1.0"?>
+<!DOCTYPE root [<!ENTITY read SYSTEM 'file:///etc/passwd'>]>
+<root>&read;</root>
+
+Here again, we are defining an ENTITY with the name read but the difference is that we are setting it value to `SYSTEM` and path of the file.
+
+If we use this payload then a website vulnerable to XXE(normally) would display the content of the file /etc/passwd.
+
+In a similar manner, we can use this kind of payload to read other files but a lot of times you can fail to read files in this manner or the reason for failure could be the file you are trying to read.
+
