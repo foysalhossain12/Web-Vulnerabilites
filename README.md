@@ -4,9 +4,7 @@
 
 ### What is OS Command Injection ?
 
-
-``` OS 
-Command Injection is server side  web vulnerablities where attacker execute " system command"  like id, whoami ,unamem etc os command  .
+OS Command Injection is server side  web vulnerablities where attacker execute " system command"  like id, whoami ,unamem etc os command  .
 It is a web vulnerability that allows an attacker to take advantage of that made system call to execute operating system commands on the server.
 
 
