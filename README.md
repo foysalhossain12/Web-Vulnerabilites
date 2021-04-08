@@ -138,7 +138,7 @@ There is however a potentially huge problem here, a hacker may be able to change
 
 
 
-# 05. Components With Known Vulnerabilities :
+# 🧚‍♂️05. Components With Known Vulnerabilities :
 
 * Occasionally, you may find that the company/entity that you're pen-testing is using a program that already has a well documented vulnerability.
 
