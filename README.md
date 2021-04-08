@@ -136,6 +136,37 @@ There is however a potentially huge problem here, a hacker may be able to change
 
 ### 👁️ Conclusion of IDOR : When  you change the value of (get /post) parameter  , you will see other user information .
 
-https://drive.google.com/file/d/1IfrDI0eh5Mx8SppXoBJ6fEf7dDBsdZ0Z/view?usp=sharing
 
-![GitHub Logo](https://drive.google.com/file/d/1IfrDI0eh5Mx8SppXoBJ6fEf7dDBsdZ0Z/view?usp=sharing)
+
+# 05. Components With Known Vulnerabilities :
+
+Occasionally, you may find that the company/entity that you're pen-testing is using a program that already has a well documented vulnerability.
+
+For example, let's say that a company hasn't updated their version of WordPress for a few years, and using a tool such as wpscan, you find that it's version 4.6. Some quick research will reveal that WordPress 4.6 is vulnerable to an unauthenticated remote code execution(RCE) exploit, and even better you can find an exploit already made on exploit-db.
+
+
+Process :
+
+              1. Analize target website and  findout version , name etc of target platform .
+
+             2. Then , checkout those versuon ,name are vulnerable or not  via exploit db ,rapid7  etc .
+
+             3. If target webiste version is vulnerable  you can easily hacked your targer website via those process .
+
+Example :
+
+Suppose  , Our  target website   like this :
+
+
+After analyzing  , we realize that  our target  website create by "Nostromo"  .  Ok  , thats great  .Now ,follow our previous process :
+
+1. Search  "Nostromo" on exploit db 
+
+2. find out specific exploitation according to our target version (Here  , nostromo 1.9.6 )
+
+3. Then , Download exploit file and  execute it
+
+Command :
+          download_file.py target_url  id 
+
+Here , you can use any linux os command instead of id 
