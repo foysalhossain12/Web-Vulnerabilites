@@ -3,7 +3,7 @@
 
 
 
-## 🥇1. OS Command Injection :
+## 🥇01. OS Command Injection :
 
 ### What is OS Command Injection ?
 
@@ -47,7 +47,7 @@ Note :
        2. One can easily  uploaded  shell if OS command injection is occured .
               
 
-# 🥈2. Sqlite3 or "flat-file" :
+# 🥈02. Sqlite3 or "flat-file" :
 
 When databases stored as a file it's called "flat-file"  .The extension of those file is db . ( like webapp.db , base.db )
 
@@ -71,7 +71,7 @@ Use Of Sqlite3 :
                       select * from table_name ;  // see more //
                       
                 
-# 🥉3. XML OR XML External Entity OR XXE :
+# 🥉03. XML OR XML External Entity OR XXE :
 
 An XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data.
 
@@ -125,7 +125,7 @@ If we use this payload then a website vulnerable to XXE(normally) would display 
 In a similar manner, we can use this kind of payload to read other files but a lot of times you can fail to read files in this manner or the reason for failure could be the file you are trying to read.
 
 
-# 🔊4.Broken Access -IDOR :
+# 🔊04.Broken Access -IDOR :
 
 ###### IDOR, or Insecure Direct Object Reference, is the act of exploiting a misconfiguration in the way user input is handled, to access resources you wouldn't ordinarily be able to access. IDOR is a type of access control vulnerability.
 
