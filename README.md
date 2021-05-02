@@ -190,14 +190,10 @@ Here , you can use any linux os command instead of id
 ## 👽 How One Can  Find SSRF :
 
 Step 1 :
-
-At first findout any get parameter that is use for data loaded ( Like url,data,id  )
-
+        At first findout any get parameter that is use for data loaded ( Like url,data,id  )
 Suppose , you have this website http://ptc-b59f8e4f-a516ccb2.libcurl.so/ 
 
-After  , recon you find get parameter of this website . 
-
-http://ptc-b59f8e4f-a516ccb2.libcurl.so/?url
+After  , recon you find get parameter of this website http://ptc-b59f8e4f-a516ccb2.libcurl.so/?url
 
 Now , you can test LFI, RFI And SSRF on this  website 
 
@@ -212,7 +208,10 @@ You will see information of 1234 port
 
 ## 🔥 Bypassing SSRF Protection :
 
-There are two main types of SSRF protection mechanisms out there: blacklists and whitelists
+There are two main types of SSRF protection mechanisms out there:
+                                                    
+                                                    blacklists and
+                                                    whitelists
 
 Blacklists refer to the practice of not allowing certain addresses and blocking the request if a blacklisted address was received as input. Most SSRF protection takes the form of blacklisting internal network address blocks.
       
@@ -243,3 +242,4 @@ On the other hand, whitelists mean that a server would only allow through reques
                2.https://vickieli.medium.com/bypassing-ssrf-protection-e111ae70727b (Bypass )
                3.https://pravinponnusamy.medium.com/ssrf-payloads-f09b2a86a8b4    (Bypass Payload List )
                         
+### 😍Happy Hacking 😍
