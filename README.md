@@ -165,6 +165,8 @@ Process :
 #### Example :
 
 Suppose  , Our  target website   like this :
+![bSuhuhp](https://user-images.githubusercontent.com/55437834/116803690-c024f600-ab3b-11eb-99ad-270fef1d027a.png)
+
 
 
 After analyzing  , we realize that  our target  website create by "Nostromo"  .  Ok  , thats great  .Now ,follow our previous process :
