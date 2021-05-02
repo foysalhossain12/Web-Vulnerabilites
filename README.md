@@ -171,7 +171,10 @@ After analyzing  , we realize that  our target  website create by "Nostromo"  . 
 
 Here , you can use any linux os command instead of id 
 
-# SSRF(Sever Side Request Forgery ) :
+# 🐞 SSRF(Sever Side Request Forgery ) :
+
+![server-side-request-forgery-vulnerability-ssrf](https://user-images.githubusercontent.com/55437834/116801458-070aef80-ab2c-11eb-8860-23590d56bd1a.jpg)
+
 
 ### What is SSRF ?
 #### Server-side request forgery (also known as SSRF) is a web security vulnerability that allows an attacker to induce the server-side application to make HTTP requests to an arbitrary domain of the attacker's choosing .
@@ -184,7 +187,7 @@ Here , you can use any linux os command instead of id
 2. Attacke can see any data of server
 3. Attacker can execute 3rd party mallicious website
 
-## How One Can  Find SSRF :
+## 👽 How One Can  Find SSRF :
 
 Step 1 :
 
@@ -216,7 +219,7 @@ Blacklists refer to the practice of not allowing certain addresses and blocking 
       
 On the other hand, whitelists mean that a server would only allow through requests that contain URLs on a prespecified list and fail all other requests
 
-### Bypassing Blacklists :
+### 📷 Bypassing Blacklists :
                       1.Try using IPv6 addresses instead of IPv4
                       2.Use Hex Encoding instead of Decimal number (http://0x7f.0x0.0x0.0x1)
                       3.Use Octal Encoding insted of Decimal number (http://0177.0.0.01)
@@ -227,13 +230,15 @@ On the other hand, whitelists mean that a server would only allow through reques
                       8.Fooling it with redirects
                       9.Use localhost instead of 127.0.01 (http://localhost:1234)
                       
-Practice Website Link :
+#### Practice Website Link :
+                       
                        level 1:http://ptc-e5e344a9-ab23ba80.libcurl.so/?url=https://assets.pentesterlab.com/hacker.txt
                        level 2:http://ptc-a04fcdce-f9f12764.libcurl.so/?url=https://assets.pentesterlab.com/hacker.txt
                        level 3:http://ptc-b59f8e4f-a516ccb2.libcurl.so/?url=https://assets.pentesterlab.com/hacker.txt
                        level 4:http://ptc-50a250d6-842795bb.libcurl.so/?url=https://assets.pentesterlab.com/hacker.txt
                        
-Resoures Link :
+#### Resoures Link :
+               
                1.https://portswigger.net/web-security/ssrf ( Theory about SSRF)
                2.https://vickieli.medium.com/bypassing-ssrf-protection-e111ae70727b (Bypass )
                3.https://pravinponnusamy.medium.com/ssrf-payloads-f09b2a86a8b4    (Bypass Payload List )
