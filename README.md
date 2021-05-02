@@ -5,6 +5,9 @@
 
 ## 🥇01. OS Command Injection :
 
+![command-injection-vulnerability](https://user-images.githubusercontent.com/55437834/116801682-d6c45080-ab2d-11eb-8c38-cae9126833af.jpg)
+
+
 ### What is OS Command Injection ?
 
 OS Command Injection is server side  web vulnerablities where attacker execute :eyes:" system command"  like id, whoami ,uname etc os command  .
@@ -73,6 +76,9 @@ Use Of Sqlite3 :
                 
 # 🥉03. XML OR XML External Entity OR XXE :
 
+![XXE-banner-1024x536-1-1024x536](https://user-images.githubusercontent.com/55437834/116801699-ff4c4a80-ab2d-11eb-80b6-af5d72d7ff85.jpg)
+
+
 An XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data.
 
 #### :-1:Disadvantage of XML attack :
@@ -126,6 +132,9 @@ In a similar manner, we can use this kind of payload to read other files but a l
 
 
 # 🔊04.Broken Access -IDOR :
+
+![116019462_282530606501791_5738413798267894160_n](https://user-images.githubusercontent.com/55437834/116801663-a977a280-ab2d-11eb-9b3d-b002ec8099e5.png)
+
 
 ###### IDOR, or Insecure Direct Object Reference, is the act of exploiting a misconfiguration in the way user input is handled, to access resources you wouldn't ordinarily be able to access. IDOR is a type of access control vulnerability.
 
