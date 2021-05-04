@@ -50,7 +50,7 @@ Note :
        2. One can easily  uploaded  shell if OS command injection is occured .
               
 
-# 🥈02. Sqlite3 or "flat-file" :(Sensitive Dada Exposure )
+# 🥈02. Sqlite3 or "flat-file" :(Sensitive Data Exposure )
 
 When databases stored as a file it's called "flat-file"  .The extension of those file is db . ( like webapp.db , base.db )
 
@@ -89,9 +89,9 @@ An XML External Entity (XXE) attack is a vulnerability that abuses features of X
 
                                            3.  XXE may even enable port scanning and lead to remote code execution.
                                            
-                                           4.  Allow attacker to interact with any backend or external system
+                                           4.  Allow attacker to interact with any backend or external system of target system
                                            
-                                           5.  It ccan access and and can allow the attacker to read the file on target system
+                                           5.  It can access and and can allow the attacker to read the file on target system
 
 #### There are Two types of XXE attacks :
                           
@@ -258,3 +258,7 @@ On the other hand, whitelists mean that a server would only allow through reques
                3.https://pravinponnusamy.medium.com/ssrf-payloads-f09b2a86a8b4    (Bypass Payload List )
                         
 ### 😍Happy Hacking 😍
+
+Sources :
+         https://tryhackme.com/room/owasptop10
+         
