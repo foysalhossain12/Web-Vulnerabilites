@@ -134,8 +134,7 @@ If we use this payload then a website vulnerable to XXE(normally) would display 
 
 In a similar manner, we can use this kind of payload to read other files but a lot of times you can fail to read files in this manner or the reason for failure could be the file you are trying to read.
 
-### ⚗️ Practice Web Link :
-                    http://ptc-7fee5309-4b781964.libcurl.so/?xml=%3Ctest%3Ehacker%3C/test%3E
+### ⚗️ Practice Web Link :http://ptc-7fee5309-4b781964.libcurl.so/?xml=%3Ctest%3Ehacker%3C/test%3E
 
 
 # 🔊04.Broken Access -IDOR :
