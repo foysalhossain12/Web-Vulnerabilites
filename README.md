@@ -1,6 +1,15 @@
  #                                         💪 ` Web-Vulnerabilites ` 💪
 
 
+Vulnerabilities :
+
+OS Command Injection
+Sensitive Data Exposure
+XML or XXE
+Broken Access -IDOR
+Components With Known Vulnerabilities
+SSRF(Sever Side Request Forgery )
+
 
 
 ## 🥇01. OS Command Injection :
